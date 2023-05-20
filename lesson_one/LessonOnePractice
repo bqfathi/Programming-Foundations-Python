@@ -1,0 +1,14 @@
+my_message = "It's Late"
+print(my_message)
+
+my_message = "Hello World"
+print(my_message)
+
+my_message = "Hello World, how are you?"
+print(my_message)
+
+my_text = "She said \"Hello!\""
+print(my_text)
+
+my_message = 'What\'s your name?'
+print(my_message)

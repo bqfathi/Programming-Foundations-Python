@@ -1,0 +1,59 @@
+#Part 1
+print("****Part 1****")
+list_of_names = ['Kurt', 'David', 'Katherine']
+
+for person in list_of_names:
+    print("Where is " + person  + " today?")
+
+#Part 2
+print("****Part 2****")
+my_favorite_cars = ["Toyota", "Kia", "BMW"]
+my_favorite_flowers = ["Rose", "Pansy", "Daisy", "Mum"]
+my_favore_animals = ["Chickens", "Cats", "Dogs", "Sloths", "Horses"]
+
+my_favorite_things = []
+
+for cars in my_favorite_cars: 
+    my_favorite_things.append(cars)
+
+for flowers in my_favorite_flowers:
+    my_favorite_things.append(flowers)
+
+for animals in my_favore_animals:
+    my_favorite_things.append(animals)
+print("Number of items in this list: ")
+print(len(my_favorite_things))
+print(my_favorite_things)
+#The above is concatenated into one list
+#Now to print out each item with an even length of letters?
+#First, I want to see it as a list
+#for things in my_favorite_things:
+#    print(things)
+#Making a list to put the even lengthed things in
+even_favorite_things = []
+#For loop for filling the new list
+for things in my_favorite_things:
+    if len(things) % 2 == 0:
+        even_favorite_things.append(things)
+    else:
+        print("Ignoring this odd favorite thing: ", things)
+    
+for thing in even_favorite_things:
+    print("This is an even favorite thing ", thing)
+
+#Part 3
+print("****Part 3****")
+number_range = range(1,21)
+for number in number_range:
+    if number % 15 == 0:
+        print("ZipZap")
+    elif number % 3 == 0:
+        print("Zip")
+    elif number %5 == 0:
+        print("Zap")
+    else:
+        print(number)
+
+
+
+
